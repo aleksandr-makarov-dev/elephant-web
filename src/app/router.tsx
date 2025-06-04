@@ -1,16 +1,16 @@
+import { BoardPage } from "@/features/task-management/pages/board-page";
+import { BoardsPage } from "@/features/task-management/pages/boards-page";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { LandingPage } from "./pages/landing-page";
-import { BoardsPage } from "./pages/dashboard/boards-page";
 
 const createAppRouter = () =>
   createBrowserRouter([
     {
-      path: "/",
-      element: <LandingPage />,
+      path: "/d/boards",
+      element: <BoardsPage />,
     },
     {
-      path: "/dashboard/boards",
-      element: <BoardsPage />,
+      path: "/d/boards/:boardId",
+      element: <BoardPage />,
     },
   ]);
 

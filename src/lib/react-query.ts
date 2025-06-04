@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { UseMutationOptions, DefaultOptions } from "@tanstack/react-query";
 
 export const queryConfig = {
